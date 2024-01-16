@@ -2,7 +2,9 @@ package org.example.SpringBootDeveloper;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
+@EnableJpaAuditing // 시간 자동 업데이트
 @SpringBootApplication
 // 스프링부트 설정 파일을 빈으로 등록하고 자둥구성을 활성화
 public class SpringBootDevloperApplication {
