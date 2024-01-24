@@ -5,8 +5,9 @@ spring:
       hibernate:
         format_sql: true
     defer-datasource-initialization: true
-  datasource:
+  datasource: #db정보 추가
     url: jdbc:h2:mem:testdb
-  h2:
+    username: sa
+  h2: #콘솔활성화
     console:
       enabled: true
