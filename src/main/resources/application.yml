@@ -13,4 +13,4 @@ spring:
       enabled: true
   jwt:
     issuer : ybh0311@naver.com
-    secret_key :  study-spring
+    secret_key : study-spring
