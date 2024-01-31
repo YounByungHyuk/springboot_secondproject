@@ -8,12 +8,16 @@ import org.example.SpringBootDeveloper.domain.Article;
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
-public class AddArticleRequest { // 컨트롤러에서 요청하는 본문(DB의 하나)를 받을 객체
+public class AddArticleRequest {
     private String title;
+
     private String content;
 
-    public Article toEntity(){
-        return Article.builder().title(title).content(content).build();
+    public Article toEntity(String author) {
+        return Article.builder()
+                .title(title)
+                .content(content)
+                .author(author)
+                .build();
     }
-
 }
